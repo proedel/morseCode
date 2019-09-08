@@ -5,86 +5,86 @@ public class englishToMorse {
 		word = word.toUpperCase();
 		String otherLetters = "";
 		String message = "";
-		for(int i = 0; i <= word.length(); i++) {
+		for(int i = 0; i <= word.length()-1; i++) {
 			switch(word.charAt(i)) {
 					case 'A':
-						message  +=   ".-";
+						message  +=   ".-/";
 						break;
 		            case 'B':
-		                message  +=   "-...";
+		                message  +=   "-.../";
 		                break;
 		            case 'C':
-		                message  +=   "-.-.";
+		                message  +=   "-.-./";
 		                break;
 		            case 'D':
-		                message  +=   "d=-../";
+		                message  +=   "-../";
 		                break;
 		            case 'E':
-		                message  +=   ".";
+		                message  +=   "./";
 		                break;
 		            case 'F':
-		                message  +=   "..-.";
+		                message  +=   "..-./";
 		                break;
 		            case 'G':
-		                message  +=   "--.";
+		                message  +=   "--./";
 		                break;
 		            case 'H':
-		                message  +=   "....";
+		                message  +=   "..../";
 		                break;
 		            case 'I':
-		                message  +=   "..";
+		                message  +=   "../";
 		                break;
 		          
 		            case 'J':
-		                message  +=   ".---";
+		                message  +=   ".---/";
 		                break;
 		            case 'K':
-		                message  +=  "-.-";
+		                message  +=  "-.-/";
 		                break;
 		            case 'L':
-		                message  +=   ".-..";
+		                message  +=   ".-../";
 		                break;
 		            case 'M':
-		                message  +=  "--";
+		                message  +=  "--/";
 		                break;
 		            case 'N':
-		                message  +=   "-.";
+		                message  +=   "-./";
 		                break;
 		            case 'O':
-		                message  +=   "o=---/";
+		                message  +=   "---/";
 		                break;
 		            case 'P':
-		                message  +=   ".--.";
+		                message  +=   ".--./";
 		                break;
 		            case 'Q':
-		                message  +=  "--.-";
+		                message  +=  "--.-/";
 		                break;
 		            case 'R':
-		                message  +=   "r=.-./";
+		                message  +=   ".-./";
 		                break;
 		            case 'S':
-		                message  +=   "...";
+		                message  +=   ".../";
 		                break;
 		            case 'T':
-		                message  +=   "-";
+		                message  +=   "-/";
 		                break;
 		            case 'U':
-		                message  +=   "..-";
+		                message  +=   "../";
 		                break;
 		            case 'V':
-		                message  +=  "...-";
+		                message  +=  "...-/";
 		                break;
 		            case 'W':
-		                message  += "w=.--/";
+		                message  += ".--/";
 		                break;
 		            case 'X':
-		                message  +=   "-..-";
+		                message  +=   "-..-/";
 		                break;
 		            case 'Y':
-		                message  +=   "-.--:";
+		                message  +=   "-.--:/";
 		                break;
 		            case 'Z':
-		                message  +=   "--..";
+		                message  +=   "--../";
 		                break;
 		            case ' ':
 		                message  +=   " ";
@@ -94,10 +94,9 @@ public class englishToMorse {
 		           
 			 
 			}
-			System.out.println("Original Word: " + word);
-			System.out.println(message);
 		}
-		
+		System.out.println("Original Word: " + word);
+		System.out.println(message);
 	}
 
 }
